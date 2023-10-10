@@ -39,13 +39,14 @@ looking for a directory to switch to, and not a file.
 ![](ls_file.png)  
 **Working Directory:** /home/lecture1
 **Explanation:** The output is the path of the file I gave to the argument. I think since we gave it a path to a file, it will only list the file as there are no other files or directories within to list. 
-**Error?** I do not beleive this is an error. maybe not a good use of the command? Not entirely sure.
+**Error?** I do not believe this is an error. maybe not a good use of the command? Not entirely sure.
 
 # CAT COMMAND
-## No argument command and output
-**Working Directory:** 
-**Explanation:** 
-**Error?**
+## No argument command and output  
+**No output, command: [user@sahara ~/lecture1]$ cat**
+**Working Directory:** /home/lecture1
+**Explanation:** I believe this lack of output is because the cat command is supposed to read the content from the file in the argument and produce its contents as output, but we did not give it an argument. 
+**Error?** I don't think so, I just think it needs a file in the argument, so maybe not a good use of the command that is working.  
 
 ## Directory as an argument command and output
 **Working Directory:** 
