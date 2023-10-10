@@ -48,12 +48,14 @@ looking for a directory to switch to, and not a file.
 **Explanation:** I believe this lack of output is because the cat command is supposed to read the content from the file in the argument and produce its contents as output, but we did not give it an argument. 
 **Error?** I don't think so, I just think it needs a file in the argument, so maybe not a good use of the command that is working.  
 
-## Directory as an argument command and output
-**Working Directory:** 
-**Explanation:** 
-**Error?**
+## Directory as an argument command and output  
+![](cat_directory.png)  
+**Working Directory:** /home/lecture1
+**Explanation:** This output is given because the cat command scans the contents of a file and produces them as output. However, we are giving the command a directory, with multiple files inside of it. 
+**Error?** I believe that this is an argument error, we gave it the wrong type of argument. The cat command takes a file and outputs its contents, but we gave the cat command a directory. 
 
-## File as an argument command and output
+## File as an argument command and output  
+
 **Working Directory:** 
 **Explanation:** 
 **Error?**
