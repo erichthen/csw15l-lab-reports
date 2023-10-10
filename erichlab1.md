@@ -16,7 +16,7 @@ was the prompt now containing lecture1: [user@sahara ~/lecture1]$
 **Error?** Not an error
 
 ## File as an argument command and output  
-![](cd_file.png)
+![](cd_file.png)  
 **Working Directory:** /home/lecture1
 **Explanation:** I believe this is because the cd command is
 looking for a directory to switch to, and not a file. 
@@ -43,7 +43,7 @@ looking for a directory to switch to, and not a file.
 
 # CAT COMMAND
 ## No argument command and output  
-**No output, command: [user@sahara ~/lecture1]$ cat**
+**No output, command: [user@sahara ~/lecture1]$ cat**  
 **Working Directory:** /home/lecture1
 **Explanation:** I believe this lack of output is because the cat command is supposed to read the content from the file in the argument and produce its contents as output, but we did not give it an argument. 
 **Error?** I don't think so, I just think it needs a file in the argument, so maybe not a good use of the command that is working.  
@@ -55,7 +55,7 @@ looking for a directory to switch to, and not a file.
 **Error?** I believe that this is an argument error, we gave it the wrong type of argument. The cat command takes a file and outputs its contents, but we gave the cat command a directory. 
 
 ## File as an argument command and output  
-
-**Working Directory:** 
-**Explanation:** 
-**Error?**
+![](cat_file.png)  
+**Working Directory:** /home/lecture1
+**Explanation:** This output is the contents from the Hello.java file in my directory. The cat command produces the contents from the file given to the terminal output, and such is the explanation for the output here. 
+**Error?** No error 
