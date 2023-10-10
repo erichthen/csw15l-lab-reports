@@ -23,13 +23,15 @@ looking for a directory to switch to, and not a file.
 **Error?** This is an argument error, we gave it the wrong type of argument, a path to a file instead of a directory. 
 
 # LS COMMAND
-## No argument command and output
-**Working Directory:** 
-**Explanation:** 
-**Error?**
+## No argument command and output  
+![](ls_noarg.png)  
+**Working Directory:** /home/lecture1
+**Explanation:** This output lists the files and folders in the current working directory. 
+**Error?** No error
 
-## Directory as an argument command and output
-**Working Directory:** 
+## Directory as an argument command and output  
+![](ls_directory.png)
+**Working Directory:** /home/lecture1
 **Explanation:** 
 **Error?**
 
