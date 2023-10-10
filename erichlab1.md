@@ -12,7 +12,7 @@ but it needs the argument of where to go to.
 **No output, command: [user@sahara ~]$ cd lecture1**  
 **Working Directory:** /home/lecture1
 **Explanation:** This output or lack thereof means that the command worked and the one visible change
-was the prompt now containing lecture1: [user@sahara ~/lecture1]$
+was the prompt now containing lecture1: [user@sahara ~/lecture1]$. This cd command changed our *active working directory* to /home/lecture1
 **Error?** Not an error
 
 ## File as an argument command and output  
