@@ -15,7 +15,7 @@ but it needs the argument of where to go to.
 was the prompt now containing lecture1: [user@sahara ~/lecture1]$
 **Error?** Not an error
 
-## File as an argument command and output
+## File as an argument command and output  
 ![](cd_file.png)
 **Working Directory:** /home/lecture1
 **Explanation:** I believe this is because the cd command is
@@ -30,15 +30,16 @@ looking for a directory to switch to, and not a file.
 **Error?** No error
 
 ## Directory as an argument command and output  
-![](ls_directory.png)
+![](ls_directory.png)  
 **Working Directory:** /home/lecture1
-**Explanation:** 
-**Error?**
+**Explanation:** When the ls command was given a directory, the output didn't actually change from having no argument, because ls listed the files in our working directory, which is the same directory as our working directory when I called ls no argument. 
+**Error?** I don't think there is an error here. 
 
-## File as an argument command and output
-**Working Directory:** 
-**Explanation:** 
-**Error?**
+## File as an argument command and output  
+![](ls_file.png)  
+**Working Directory:** /home/lecture1
+**Explanation:** The output is the path of the file I gave to the argument. I think since we gave it a path to a file, it will only list the file as there are no other files or directories within to list. 
+**Error?** I do not beleive this is an error. maybe not a good use of the command? Not entirely sure.
 
 # CAT COMMAND
 ## No argument command and output
