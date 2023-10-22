@@ -44,6 +44,8 @@ looking for a directory to switch to, and not a file.
 # CAT COMMAND
 ## No argument command and output  
 **No output, command: [user@sahara ~/lecture1]$ cat**  
+**EDIT: OUPUT BELOW**  
+
 **Working Directory:** /home/lecture1
 **Explanation:** I believe this lack of output is because the cat command is supposed to read the content from the file in the argument and produce its contents as output, but we did not give it an argument. **EDIT: When I ran the cat command again with no argument, I got a blank output. I originally didn't think of it as anything but a blank output. However, after inputting something into the blank command line after I run the command, whatever I type gets printed to the next line. Therefore, it is not a blank output, and this can be explained because of how the command will wait for input, read it, and then produce the output.**  
 **Error?** I don't think so, I think it needs a file in the argument, so maybe it's not a good use of the command that is working. **EDIT: Not an error.**
