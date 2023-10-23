@@ -22,7 +22,7 @@
   parameter[1]) this argument. *.equals()* is called with the argument "s" : 
   checking if there is "s" before the equals (parameter[0]). If so, the relevant 
   field of my count variable is increased, and the *append()* method is called on 
-  my StringBuilder to correctly format and add the message. 
+  my StringBuilder to correctly format and add the message.  
   **How do the values of any relevant fields of the class change from this specific 
   request? If no values got changed, explain why.**  
   From this specific request, the field "count" is changed by an increment of 1. My 
