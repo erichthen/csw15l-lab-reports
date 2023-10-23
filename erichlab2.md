@@ -27,7 +27,8 @@
   request? If no values got changed, explain why.**  
   From this specific request, the field "count" is changed by an increment of 1. My 
   StringBuilder field also changes for this request, as a result of appending ("\n" 
-  + count + "." + s); *s = parameter[1], whose value changes to "Hello".
+  count + "." + s); as well as Parameter[1] now storing "Hello".  
+
 
   ## /add-message?s=How are you  
   ![](second_message.png)  
