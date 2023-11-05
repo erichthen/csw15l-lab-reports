@@ -1,6 +1,6 @@
 # Erich Then - Lab Report 2  
 
-
+==Hello==
   # Part 1  
   
   ## StringServer.java Code
