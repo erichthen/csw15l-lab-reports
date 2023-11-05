@@ -56,7 +56,7 @@
   value of 2. Thus, my StingBuilder field is changed from the output of the last 
   request to that output plus the new argument in the .append(). It goes from 
   ==Edit: I think I did have the number 2 but the formatting was off.==
-  "1.Hello" to "1.Hello ==2. How+are+you".==  
+  1.Hello to 1.Hello ==2.How+are+you.==  
    
   # Part 2  
 
