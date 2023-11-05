@@ -23,7 +23,7 @@
   @Test
   public void testReverseInPlace2() {
     int[] input = {1, 3, 1};
-    int[] expected = {1,3,1};
+    int[] expected = {1, 3, 1};
     ArrayExamples.reverseInPlace(input);
     assertArrayEquals(expected, input);
     
@@ -64,7 +64,7 @@ static void reverseInPlace(int[] arr) {
  }
 }
 ```
-#### The issue with this method lies in the swapping step. While the indexing is correct for arr[i] = arr[arr.length - i - 1], this is not done properly in one step. This step will overwrite the original array while swapping, so we must store a temporary value arr[i] before the swap step. Now we can do this step and assign it to arr[i]. We don't have to worry about improper reversing anymore because we now re-assign temp to arr[arr.length - i - 1].  
+#### The issue with this method lies in the swapping step. The one-step line in the for loop will only swap the first half of the values, reassigning the values starting at the beginning. Once the loop iterates past changing the first half of the elements,  So by the time we iterate past half of the array, the loop oversteps and continues to swap, thus giving an incorrect reversal. To fix this, we store arr[i] into a temporary variable before we do the swap step. Following this, we reassign our temporary variable to the same index we assigned to arr[i]. Finally, we fix the iteration to only go up to arr.length/2 so the last values won't get overwritten. 
 
 ## Part 2: Researching the grep command  
 
@@ -78,7 +78,7 @@ E2@Thens-MacBook-Air biomed % grep -i fEnTaNyL cc3.txt
             consistent with anesthesia. Lower doses of fentanyl
             theta bands. In the cat, very high levels of fentanyl,
             morphine is similar to that of fentanyl, and resembles
-        midazolam (Figs 4and 5), lorazepam (Fig 6), and fentanyl
+        midazolam (Figs 4 and 5), lorazepam (Fig 6), and fentanyl
 E2@Thens-MacBook-Air biomed % 
 }
 ```
@@ -115,6 +115,7 @@ Thens-MacBook-Air:911report E2$
 }
 ```
 #### The use of grep -w also prints the lines that match a certain sequence. However, this option will only print the lines where the sequence is a stand-alone word. This is extremely helpful in my above example because a normal grep call on "atta" will return all the lines with that sequence, even if it is a substring of another word, like "attack", both being common in this text file.  
+```
 {
 Thens-MacBook-Air:911report E2$ grep -w "Jordan" chapter-6.txt
 to attack Jewish and American targets in Jordan.
@@ -123,10 +124,11 @@ well as Jordan; with Abu Zubaydah's assistance, Abu Hoshar sent these recruits t
 Jordan into Israel, and two Christian holy sites, at a time when all these locations
 committing himself to do anything Bin Ladin ordered. He then departed for Jordan and On December 4, as news came in about the discoveries in Jordan, National Security
 that provided intelligence via liaison. On occasion, as in Jordan in December 1999,
-}  
+}
+```
 #### Here, I want to find the lines that contain the country Jordan. This is helpful because I do not need to know the lines that contain "Jordanian", which Jordan is a substring of. As you can see, the output gives me the lines with just Jordan in them.  
 
-### Option 3: Showing the line number of lines that contain the sequence  
+### Option 3: Showing the line number of lines that contain the sequence    
 
 ```
 {
@@ -135,12 +137,31 @@ Thens-MacBook-Air:Alcohol_Problems E2$ grep -n "Daniel Pollock" DraftRecom-PDF.t
 122:Daniel Pollock added that the message of the recommendations
 }
 ```
-#### This use of the grep command will tell us the line number of the matching lines before it gives us the line. This is extremely because one can now find where the lines are, instead of just being shown the lines.  
+#### This use of the grep command will tell us the line number of the matching lines before it gives us the line. This is extremely helpful because one can now find where the lines are, instead of just being shown the lines.  
 ```
 {
-
+Thens-MacBook-Air:Alcohol_Problems E2$ grep -n "novel" Session4-PDF.txt
+1372:lead to novel interventions.
 }
 ```
+#### Here, I am using the grep command with the -n option so I know which line the word "novel" appears in the file. As we can see, it is only found on the very last line of the file, line 1372. As one can imagine, it would take a while to find without using grep -n.  
+
+### Option 4: Counting the lines with the matching sequence  
+
+```
+{
+Thens-MacBook-Air:911report E2$ grep -c -i  "al Qaeda" chapter-13.4.txt
+86
+}
+```
+#### In this example, I call the grep command with this last option, -c. This will count the number of lines that contain "al Qaeda" in the fourth file of chapter 14 in the 911report directory. Because I am combining the count with -i, which as I stated above disregards the cases of the characters, al Qaeda and Al Qaeda are both counted. This is helpful if you want to know the frequency of the lines that contain said sequence.  
+```
+{
+Thens-MacBook-Air:Media E2$ grep -c -w "a" A_helping_hand.txt
+32
+}
+```
+#### This command will count the amount of times "a" appears in the text. Since I am combining it with the -w option above, I am looking for the frequency of lines that contain "a" as a word by itself. Using this command shows me that 32 lines contain a lowercase, independent "a" in this file. This is helpful to use once again if you want to get an idea of how frequently the sequence appears in the file.
 
 
 
