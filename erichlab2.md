@@ -69,7 +69,7 @@
   ![](ls_public.png)
   
 
-  ## Trying to get Public Key within ieng6  
+  ~~## Trying to get Public Key within ieng6~~   
   The public key path should be within my ieng6 account, but I couldn't get the 
   files into the /.ssh directory on my course account. Below is my ls command in that directory  
   ![](trying_onaccount.png)  
