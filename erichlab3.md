@@ -64,7 +64,7 @@ static void reverseInPlace(int[] arr) {
  }
 }
 ```
-#### The issue with this method lies in the swapping step. The one-step line in the for loop will only swap the first half of the values, reassigning the values starting at the beginning. Once the loop iterates past changing the first half of the elements,  So by the time we iterate past half of the array, the loop oversteps and continues to swap, thus giving an incorrect reversal. To fix this, we store arr[i] into a temporary variable before we do the swap step. Following this, we reassign our temporary variable to the same index we assigned to arr[i]. Finally, we fix the iteration to only go up to arr.length/2 so the last values won't get overwritten. 
+#### The issue with this method lies in the swapping step. The one-step line in the for loop will only swap the first half of the values,  by the time we iterate past half of the array, the loop oversteps and continues to swap, thus giving an incorrect reversal. To fix this, we store arr[i] into a temporary variable before we do the swap step. Following this, we reassign our temporary variable to the same index we assigned to arr[i]. Because we store the element at the index of our array, do the step, and then assign the temporary variable to the opposite index. Finally, we fix the iteration to only go up to arr.length/2 so the last values won't get overwritten with the wrong first values. 
 
 ## Part 2: Researching the grep command  
 
@@ -82,7 +82,7 @@ E2@Thens-MacBook-Air biomed % grep -i fEnTaNyL cc3.txt
 E2@Thens-MacBook-Air biomed % 
 }
 ```
-#### In this example, I call the grep command which searches the file for a sequence of characters, outputting the lines of the file that contain the sequence. In this command, I search for the sequence fEnTaNyL in biomed/cc3.txt. A normal use of grep wouldn't have returned any lines with this sequence call, however because I used the -i option, it will output the lines that have fentanyl in them, regardless of the case. This is useful because there are times when certain sequences are only different because of the casing, but if you want all of the lines with this sequence disregarding the casing, this command is helpful.  
+#### In this example, I call the grep command which searches the file for a sequence of characters, outputting the lines of the file that contain the sequence. In this command, I search for the sequence fEnTaNyL in biomed/cc3.txt. Normal use of grep wouldn't have returned any lines with this sequence call, however, because I used the -i option, it will output the lines that have fentanyl in them, regardless of the case. This is useful because there are times when certain sequences are only different because of the casing, but if you want all of the lines with this sequence disregarding the casing, this command is helpful.  
 ```
 {
 Thens-MacBook-Air:911report E2$ grep -i "omari" chapter-1.txt
