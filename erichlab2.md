@@ -56,9 +56,8 @@
   value of 2. Thus, my StingBuilder field is changed from the output of the last 
   request to that output plus the new argument in the .append(). It goes from 
   "1.Hello" to "1.Hello  
-  2. How+are+you". 
-
-
+  ==2. How+are+you".==  
+   
   # Part 2  
 
   ## Path to the Private Key  
@@ -70,8 +69,12 @@
 
   ## Trying to get Public Key within ieng6  
   The public key path should be within my ieng6 account, but I couldn't get the 
-  files into the /.ssh directory on my course account. Below is my ls command in   that directory  
+  files into the /.ssh directory on my course account. Below is my ls command in that directory  
   ![](trying_onaccount.png)  
+
+  ## ==EDIT FOR RESUBMISSION==: Correctly retrieving public key path from my ieng6 account:  
+  ![](
+  
 
   ## Terminal Interaction Without Password  
   ![](terminal_interaction.png)  
