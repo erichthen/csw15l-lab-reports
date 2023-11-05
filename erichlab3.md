@@ -64,7 +64,7 @@ static void reverseInPlace(int[] arr) {
  }
 }
 ```
-#### The issue with this method lies in the swapping step. The one-step line in the for loop will only swap the first half of the values,  by the time we iterate past half of the array, the loop oversteps and continues to swap, thus giving an incorrect reversal. To fix this, we store arr[i] into a temporary variable before we do the swap step. Following this, we reassign our temporary variable to the same index we assigned to arr[i]. Because we store the element at the index of our array, do the step, and then assign the temporary variable to the opposite index. Finally, we fix the iteration to only go up to arr.length/2 so the last values won't get overwritten with the wrong first values. 
+#### The issue with this method lies in the swapping step. The one-step line in the for loop will only swap the first half of the values,  by the time we iterate past half of the array, the loop oversteps and continues to swap, thus giving an incorrect reversal. To fix this, we store arr[i] into a temporary variable before we do the swap step. Following this, we reassign our temporary variable to the same index we assigned to arr[i]. Because we store the element at the index of our array, do the step, and then assign the temporary variable to the opposite index, this will properly swap the array, assuming we only iterate half of it. Consequently, we then fix the iteration to only go up to arr.length/2 so the last values won't get overwritten with the wrong first values. 
 
 ## Part 2: Researching the grep command  
 
