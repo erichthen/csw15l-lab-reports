@@ -161,7 +161,9 @@ Thens-MacBook-Air:Media E2$ grep -c -w "a" A_helping_hand.txt
 32
 }
 ```
-#### This command will count the amount of times "a" appears in the text. Since I am combining it with the -w option above, I am looking for the frequency of lines that contain "a" as a word by itself. Using this command shows me that 32 lines contain a lowercase, independent "a" in this file. This is helpful to use once again if you want to get an idea of how frequently the sequence appears in the file.
+#### This command will count the amount of times "a" appears in the text. Since I am combining it with the -w option above, I am looking for the frequency of lines that contain "a" as a word by itself. Using this command shows me that 32 lines contain a lowercase, independent "a" in this file. This is helpful to use once again if you want to get an idea of how frequently the sequence appears in the file.  
+
+## Source used as a reference for all options: [Geeks for Geeks - grep command in Unix/Linux](https://www.geeksforgeeks.org/grep-command-in-unixlinux/)
 
 
 
