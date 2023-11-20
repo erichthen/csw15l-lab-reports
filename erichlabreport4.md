@@ -19,7 +19,7 @@ Keys Pressed: `<up><up><up><up><enter>` , `<up><up><up><enter>`
 ![](correction1.png)  
 ![](correction2.png)  
 #### The first thing I did when I got to this step is used the vim ListExamples.java command to open the vim editor on this file. Then, I prompted the ":" command search and typed in 44, the line to correct and pressed enter. This took the cursor straight to the first character in "index1", I pressed e to get the cursor straight to the last character in "index1". I then pressed "r" and typed in 2. Then, I pressed :,w,q,enter to exit and save. Commands used: vim, :<line number>, e(go to end of word), r(replace), and :wq (saves the changes and closes editor).  
-Keys Pressed: `<vim><SPACE><ListExamples.java><:44><enter><e><r><2><:wq><enter>'  
+Keys Pressed: `<vim><SPACE><ListExamples.java><:44><enter><e><r><2><:wq><enter>`  
 
 ### Step Eight: Final run of tests, inducing success  
 ![](passedfr.png)   
