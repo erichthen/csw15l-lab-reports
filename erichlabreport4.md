@@ -22,7 +22,7 @@ Keys Pressed: `<up><up><up><up><enter>` , `<up><up><up><enter>`
 Keys Pressed: `<vim><SPACE><ListExamples.java><:44><enter><e><r><2><:wq><enter>'  
 
 ### Step Eight: Final run of tests, inducing success  
-![](passed.png)   
+![](passedfr.png)   
 #### Similar to step six for the process, except a different number of up arrow keys to get to the commands again from the terminal history. I pressed up three times to get the compile command, enter, up two times to get back to the command to run the tests and entered. Once again, these commands compile and execute the tests on the file ListExamples.java, which has now been corrected as the output shows.  
 Keys Pressed: `<up><up><up><enter>` , `<up><up><enter>`  
 
