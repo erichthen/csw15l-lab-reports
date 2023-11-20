@@ -19,7 +19,7 @@ Keys Pressed: `<up><up><up><up><enter>` , `<up><up><up><enter>`
 ![](correction1.png)  
 ![](correction2.png)  
 #### The first thing I did when I got to this step is used the vim ListExamples.java command to open the vim editor on this file. Then, I prompted the ":" command search and typed in 44, the line to correct and pressed enter. This took the cursor straight to the first character in "index1", I pressed e to get the cursor straight to the last character in "index1". I then pressed "r" and typed in 2. Then, I pressed :,w,q,enter to exit and save. Commands used: vim, :<line number>, e(go to end of word), r(replace), and :wq (saves the changes and closes editor).  
-Keys Pressed: `<vim><SPACE><ListExamples.java><:44><enter><e><r><2><:wq><enter>`  
+Keys Pressed: "vim" , `<SPACE>` , "ListExamples.java" , `<:44><enter><e><r><2><:wq><enter>`  
 
 ### Step Eight: Final run of tests, inducing success  
 ![](passedfr.png)   
@@ -29,7 +29,7 @@ Keys Pressed: `<up><up><up><enter>` , `<up><up><enter>`
 ## Step Nine: Committing and Pushing the changes to my GitHub account  
 ![](addcommitpush.png)  
 #### The first command I used once I saw the failure-free output from the last step was the git add command, which added the change I made to the working directory of my repository, telling git to include this update in the following commit. I am unsure if this was necessary, but I saw it was done in lecture before the commit and push so I did it. Then, I used the commit command, which will record these changes and I included a message with it. Finally, I used the git push origin command, which pushes the changes I made to the remote repository.  
-Keys Pressed: `<git><SPACE><add><SPACE><ListExamples.java><enter>` , `<git><SPACE><commit><SPACE><-m><SPACE>` , "updating ListExamples.java for labreport 4 - erich" , `<enter>` , `<git><SPACE><push><SPACE><origin><enter>`   
+Keys Pressed: "git" , `<SPACE>`, "add" , `<SPACE>` , "ListExamples.java" , `<enter>` , "git" , <SPACE> , "commit" , `<SPACE>` , `<-m>`, `<SPACE>` , "updating ListExamples.java for labreport 4 - erich" , `<enter>` , `<git><SPACE>`, "push" , `<SPACE>` , "origin", `<enter>`   
 
 
 
