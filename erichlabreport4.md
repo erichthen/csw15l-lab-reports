@@ -29,7 +29,7 @@ Keys Pressed: `<up><up><up><enter>` , `<up><up><enter>`
 ## Step Nine: Committing and Pushing the changes to my GitHub account  
 !()[addcommitpush.png]  
 #### The first command I used once I saw the failure free output from the last step I did the git add command, which added the change I made to the working directory of my repository, telling git to include this update in the following commit. I am unsure if this was necessary, but I saw it was done in lecture before the commit and push so I did it. Then, I used the commit command, which will record these changes and I included a message with it. Finally, I used the git push origin command, which pushes the changes I made to the remote repository.  
-Keys Pressed: `<git><SPACE><add><SPACE><ListExamples.java><enter>` , `<git><SPACE><commit><SPACE><-m><SPACE>` , "updating ListExamples.java for labreport 4 - erich" , `<enter>` , `<git><SPACE><push><SPACE><origin><enter>`  
+Keys Pressed: `<git><SPACE><add><SPACE><ListExamples.java><enter>` , `<git><SPACE><commit><SPACE><-m><SPACE>` , "updating ListExamples.java for labreport 4 - erich" , `<enter>` , `<git><SPACE><push><SPACE><origin><enter>`   
 
 
 
