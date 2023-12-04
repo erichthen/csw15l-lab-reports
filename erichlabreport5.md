@@ -9,7 +9,7 @@ Judging from the output of my test script above, I am guessing that the bug revo
 
 **Sample TA:** Hello, Sample Student, it would be helpful to see your merge method. However, if you are confident in the merge method, you can try using jdb to diagnose the issue. For example, initialize jdb after compiling your file with javac -g <filename>, and try stopping after your while loop in your merge method. Here, you can print the value of result, and use it to get a better understanding of your bug. If jdb is not cooperating, a leading question I have is what is a built in java method you put in your file to see what result is after the method?  
 
-**Sample Student:** I see ,well at first I tried debugging this through jdb, which did not work because I was getting an interesting error saying the main method in my class ListExamples was not found. Below is me trying to use jdb to solve this issue:  
+**Sample Student:** I see,well at first I tried debugging this through jdb, which did not work because I was getting an interesting error saying the main method in my class ListExamples was not found. Below is me trying to use jdb to solve this issue:  
 ![](jdb_failure.png) 
 Regarding your question, I don't exactly know, but I can try using the built-in System.out.println() method on my result after the first while loop in the merge method. Below is me inputting this print statement in a place I believe will be useful to find out what the bug is.  
 ![](debugging.png)  
@@ -19,7 +19,7 @@ I can now see in the output that after this initial while loop, result is not wh
 My user directory, and the directory of the forked repository, and the created grading-area directory which contains the ListExamples.java file and the TestListExamples.java file.  
 /Users/E2/grade-review-erichthen/grading-area
 ls on this directory: IsMoon.class            ListExamples.class      ListExamples.java       StringChecker.class     TestListExamples.class  TestListExamples.java
-Additionally, the bash script is needed in the working directory, which is in the parent directoy of grade-review-erichthen: my repository that checks submissions.  
+Additionally, the bash script is needed in the working directory, which is in the parent directory of grade-review-erichthen: my repository that checks submissions.  
 
 ### Contents of each file before fixing the bug: 
 ![](filebeforefix.png)  
